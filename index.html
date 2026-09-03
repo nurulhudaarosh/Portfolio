@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD. Nurul Huda | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">NH<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="name-line">MD. Nurul</span>
+          <span class="name-line highlight">Huda</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title" id="heroTitle"></span>
+          <span class="title-cursor">|</span>
+        </div>
+        <p class="hero-description">B.Sc. in Computer Science and Engineering at United International University, Dhaka</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-glass">Get In Touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="mailto:mhuda223303@bscse.uiu.ac.bd" class="social-link" aria-label="Email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/nurul-huda-arosh-776241168/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/nurul5801" target="_blank" class="social-link" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">nurul@portfolio ~ %</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="terminal-output">
+              <p class="terminal-line">Welcome to my portfolio terminal!</p>
+              <p class="terminal-line">Type <span class="highlight">help</span> to see available commands.</p>
+            </div>
+            <div class="terminal-input-line">
+              <span class="terminal-prompt">nurul@portfolio ~ %</span>
+              <input type="text" class="terminal-input" id="terminalInput" autofocus spellcheck="false">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="card-3d">
+            <div class="about-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            </div>
+            <h3>Education</h3>
+            <p>B.Sc. in Computer Science and Engineering</p>
+            <span class="accent">United International University</span>
+            <span class="tag">CGPA: 3.74 | Expected 2026</span>
+          </div>
+        </div>
+        <div class="about-card glass-card">
+          <div class="card-3d">
+            <div class="about-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+            </div>
+            <h3>Objective</h3>
+            <p>As a student at UIU, I aim to apply my skills and knowledge to contribute effectively in a dynamic environment.</p>
+            <span class="accent">Always Learning</span>
+          </div>
+        </div>
+        <div class="about-card glass-card">
+          <div class="card-3d">
+            <div class="about-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>HSC</h3>
+            <p>Mosjid Mission Academy School and College</p>
+            <span class="accent">GPA: 5.00 | 2021</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      
+      <div class="orbit-scene" id="orbitScene">
+        <div class="orbit-ellipse e1"></div>
+        <div class="orbit-ellipse e2"></div>
+        <div class="orbit-ellipse e3"></div>
+        <div class="orbit-core">
+          <div class="core-glow"></div>
+          <div class="core-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+        </div>
+        
+        <div class="planet" data-name="C">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" loading="lazy">
+          <span>C</span>
+        </div>
+        <div class="planet" data-name="C++">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy">
+          <span>C++</span>
+        </div>
+        <div class="planet" data-name="Python">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy">
+          <span>Python</span>
+        </div>
+        
+        <div class="planet" data-name="JavaScript">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+          <span>JavaScript</span>
+        </div>
+        <div class="planet" data-name="TypeScript">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy">
+          <span>TypeScript</span>
+        </div>
+        
+        <div class="planet" data-name="HTML">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" loading="lazy">
+          <span>HTML</span>
+        </div>
+        <div class="planet" data-name="CSS">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" loading="lazy">
+          <span>CSS</span>
+        </div>
+        <div class="planet" data-name="Tailwind">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" loading="lazy">
+          <span>Tailwind</span>
+        </div>
+        <div class="planet" data-name="React">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy">
+          <span>React</span>
+        </div>
+        <div class="planet" data-name="Node.js">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy">
+          <span>Node.js</span>
+        </div>
+        <div class="planet" data-name="Express">
+          <img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" loading="lazy">
+          <span>Express</span>
+        </div>
+        <div class="planet" data-name="MySQL">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy">
+          <span>MySQL</span>
+        </div>
+        <div class="planet" data-name="Git">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy">
+          <span>Git</span>
+        </div>
+        <div class="planet" data-name="Docker">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy">
+          <span>Docker</span>
+        </div>
+        <div class="planet" data-name="Linux">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" loading="lazy">
+          <span>Linux</span>
+        </div>
+        <div class="planet" data-name="VS Code">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy">
+          <span>VS Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card glass-card">
+          <div class="card-3d">
+            <div class="project-badge">IoT</div>
+            <h3 class="project-title">SPAK – Smart Precision Agricultural Kit</h3>
+            <p class="project-role">Team Leader | ESP32, NPK Sensor, Web Dashboard</p>
+            <p class="project-description">Modular rover for precision agriculture with ESP32-based control, Modbus RTU, and real-time soil data. Dashboard with module status and sensor values.</p>
+            <div class="project-tech">
+              <span>ESP32</span>
+              <span>Modbus RTU</span>
+              <span>Web Dashboard</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card">
+          <div class="card-3d">
+            <div class="project-badge">Web</div>
+            <h3 class="project-title">UniHub – Social Platform</h3>
+            <p class="project-role">DBMS Lab Project</p>
+            <p class="project-description">Role-based access for students, alumni, and faculty with local/national feed system and academic modules.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>JS</span>
+              <span>Tailwind</span>
+              <span>Express.js</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nurul5801/Unihub" target="_blank" class="btn btn-small">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card">
+          <div class="card-3d">
+            <div class="project-badge">Desktop</div>
+            <h3 class="project-title">Self Management System</h3>
+            <p class="project-role">AOOP Lab Project | 2nd Runner-Up</p>
+            <p class="project-description">Personal dashboard with task, note, and goal management. Awarded 2nd Runner-Up in UIU AOOP Project Showcase.</p>
+            <div class="project-tech">
+              <span>JavaFX</span>
+              <span>OOP</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/nurul5801/Self-Management" target="_blank" class="btn btn-small">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Experience</span>
+        <h2 class="section-title">Leadership & Achievements</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="card-3d">
+              <span class="timeline-date">2025</span>
+              <h3 class="timeline-title">Team Leader – Segmentation Fault (SPAK Project)</h3>
+              <p class="timeline-description">Managed 6-member team for IoT rover. Integrated hardware, software, and UI components.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="card-3d">
+              <span class="timeline-date">2025</span>
+              <h3 class="timeline-title">Team Leader – UniHub Project</h3>
+              <p class="timeline-description">Led design and development of university-based social platform.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="card-3d">
+              <span class="timeline-date">2024</span>
+              <h3 class="timeline-title">Team Leader – Self Management System</h3>
+              <p class="timeline-description">Coordinated design and features for productivity-focused desktop app.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="card-3d">
+              <span class="timeline-date">2025</span>
+              <h3 class="timeline-title">Volunteer – UIU CSE Fest 2025</h3>
+              <p class="timeline-description">Assisted in managing and coordinating technical events. Supported logistics and helped ensure smooth operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <div class="contact-links">
+            <a href="mailto:mhuda223303@bscse.uiu.ac.bd" class="contact-item glass-card">
+              <div class="card-3d">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>mhuda223303@bscse.uiu.ac.bd</span>
+              </div>
+            </a>
+            <a href="tel:+8801792021499" class="contact-item glass-card">
+              <div class="card-3d">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+880 1792-021499</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/nurul-huda-arosh-776241168/" target="_blank" class="contact-item glass-card">
+              <div class="card-3d">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn Profile</span>
+              </div>
+            </a>
+            <a href="https://github.com/nurul5801" target="_blank" class="contact-item glass-card">
+              <div class="card-3d">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span>GitHub Profile</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm">
+          <div class="card-3d">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span>Send Message</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 MD. Nurul Huda. Built with passion.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
